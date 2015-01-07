@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Drawer Demo</title>
+    <style>
+        .drawer-toggle {
+            background-color: lightblue;
+            color: white;
+            padding: 10px;
+        }
+        .simple-drawer {
+            width: 960px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="simple-drawer"> <!-- drawer container - your toggle and drawer go inside this -->
+        <div class="drawer-toggle"> <!-- clicking opens drawer-target -->
+            Toggle Drawer
+        </div>
+        <div class="drawer-target"> <!-- your drawer content goes here -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+    </div>
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/class.js/src/class.min.js"></script>
+<script src="jquery-simple-drawer.js"></script>
+<script>
+    new SimpleDrawer($('.simple-drawer'), {
+        target: '.drawer-target', //selector for the drawer element
+        toggle: '.drawer-toggle', //selector for the toggle element
+        autoActive: true //setting to false will cause the drawer to be closed at load
+    });
+</script>
+</html>
