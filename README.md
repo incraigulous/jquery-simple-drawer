@@ -16,7 +16,7 @@ new Drawer($('.simple-drawer'), {
 
 ##Options
 
-**Target:** Selector for the drawer element. *Default: .drawer-target*<br />
-**Toggle:** Selector for the toggle element. *Default: .drawer-toggle*<br />
+**target:** Selector for the drawer element. *Default: .drawer-target*<br />
+**toggle:** Selector for the toggle element. *Default: .drawer-toggle*<br />
 **autoActive:** setting to false will cause the drawer to be closed at load. *Default: true*
 
