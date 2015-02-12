@@ -7,7 +7,7 @@ A simple content drawer based on jQuery. Unlike other drawer plugins, this is no
 Instantiate a new SimpleDrawer class and pass in your element. You can also pass an options object as your second parameter but this is optional.
 
 ````javascript
-new Drawer($('.simple-drawer'), {
+new SimpleDrawer($('.simple-drawer'), {
         target: '.drawer-target', //selector for the drawer element
         toggle: '.drawer-toggle', //selector for the toggle element
         autoActive: true //setting to false will cause the drawer to be closed at load
